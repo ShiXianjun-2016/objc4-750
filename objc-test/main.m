@@ -8,12 +8,21 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
+
+#import "Person.h"
+#import "isa.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Class newClass = objc_allocateClassPair(objc_getClass("NSObject"), "newClass", 0);
-                objc_registerClassPair(newClass);
-        id newObject = [[newClass alloc]init];
-        NSLog(@"%@",newObject);
+        
+//        NSNumber *number = [[NSNumber alloc] initWithInteger:200];
+//
+//        NSLog(@"%p", number);
+    
+        Person *p = [Person alloc];
+        
+        objc_msgSend(p, @selector(run));
+        
     }
     return 0;
 }
