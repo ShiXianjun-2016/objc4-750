@@ -40,6 +40,7 @@
 		52BC30A521C665360027D1EA /* tsd.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BC30A421C665360027D1EA /* tsd.h */; };
 		52BC30A721C665990027D1EA /* spinlock_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BC30A621C665980027D1EA /* spinlock_private.h */; };
 		52BC30AF21C66C020027D1EA /* pthread_machdep.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BC30AE21C66C020027D1EA /* pthread_machdep.h */; };
+		676005EF2292E6CE00BA5286 /* TestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 676005EE2292E6CE00BA5286 /* TestDemo.m */; };
 		67D16358228AA8E600045CC5 /* PersonProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D16354228AA8E500045CC5 /* PersonProxy.m */; };
 		67D16359228AA8E600045CC5 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D16357228AA8E600045CC5 /* Person.m */; };
 		7593EC58202248E50046AB96 /* objc-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 7593EC57202248DF0046AB96 /* objc-object.h */; };
@@ -183,6 +184,8 @@
 		52BC30A421C665360027D1EA /* tsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tsd.h; sourceTree = "<group>"; };
 		52BC30A621C665980027D1EA /* spinlock_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spinlock_private.h; sourceTree = "<group>"; };
 		52BC30AE21C66C020027D1EA /* pthread_machdep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pthread_machdep.h; sourceTree = "<group>"; };
+		676005ED2292E6CE00BA5286 /* TestDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestDemo.h; sourceTree = "<group>"; };
+		676005EE2292E6CE00BA5286 /* TestDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestDemo.m; sourceTree = "<group>"; };
 		67D16354228AA8E500045CC5 /* PersonProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonProxy.m; sourceTree = "<group>"; };
 		67D16355228AA8E600045CC5 /* PersonProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonProxy.h; sourceTree = "<group>"; };
 		67D16356228AA8E600045CC5 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -388,6 +391,8 @@
 			isa = PBXGroup;
 			children = (
 				5255259A21C68E3C00072CE6 /* main.m */,
+				676005ED2292E6CE00BA5286 /* TestDemo.h */,
+				676005EE2292E6CE00BA5286 /* TestDemo.m */,
 				67D16353228AA89200045CC5 /* Class */,
 			);
 			path = "objc-test";
@@ -777,6 +782,7 @@
 			files = (
 				67D16359228AA8E600045CC5 /* Person.m in Sources */,
 				5255259B21C68E3C00072CE6 /* main.m in Sources */,
+				676005EF2292E6CE00BA5286 /* TestDemo.m in Sources */,
 				67D16358228AA8E600045CC5 /* PersonProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

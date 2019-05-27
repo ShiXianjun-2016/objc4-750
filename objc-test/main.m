@@ -9,19 +9,22 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-#import "Person.h"
+#import "TestDemo.h"
 #import "isa.h"
+
+#   define SJ_ISA_MASK        0x00007ffffffffff8ULL
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-//        NSNumber *number = [[NSNumber alloc] initWithInteger:200];
-//
-//        NSLog(@"%p", number);
-    
-        Person *p = [Person alloc];
+        // class_data_bits_t
         
-        objc_msgSend(p, @selector(run));
+        TestDemo *p = [TestDemo new];
+        
+        Class cls1 = p.class;
+        Class cls2 = object_getClass(cls1);
+        
+        NSLog(@"%p - %p", cls1, cls2);
         
     }
     return 0;
